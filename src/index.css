@@ -1,0 +1,12 @@
+.banners {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-item a{
+    color: rgb(3, 65, 3);
+}
+
+.nav-item a:hover{
+    color: rgb(35, 179, 35);
+}
