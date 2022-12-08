@@ -1,17 +1,13 @@
-import React from "react";
-import Banners from "./components/Banners";
-import Footer from "./components/Footer";
-import ItemListContainer from "./components/ItemListContainer";
-import NavBar from "./components/NavBar";
-import Promocion from "./components/Promocion";
+import { ItemCount } from "./components/ItemCount/ItemCount";
+import { Footer} from "./components/Footer/Footer";
+import { ItemListContainer } from "./components/ItemListContainer/ItemListContainer";
+import { NavBar } from "./components/NavBar/NavBar"; 
 
 const App = () => {
   return(
     <div>
       <NavBar />
-      <ItemListContainer msj={"Con la compra de un COMBO TRIPLE LENNY  + $400  Te llevas de regalo un carl de juguete!"} />
-      <Banners />
-      <Promocion />
+      <ItemListContainer />
       <Footer />
     </div>
   )

@@ -1,6 +1,4 @@
-import React from "react";
-
-const Footer = () => {
+export const Footer = () => {
     return (
         <div className="container py-5">
             <div className="row">
@@ -39,5 +37,3 @@ const Footer = () => {
         </div>
     )
 }
-
-export default Footer;

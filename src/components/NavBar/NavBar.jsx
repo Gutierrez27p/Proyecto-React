@@ -1,7 +1,6 @@
-import React from "react";
-import CartWidget from "./CartWidget";
+import CartWidget from "../CartWidget/CartWidget";
 
-const NavBar = () => {
+export const NavBar = () => {
     return (
         <div className="container">
             <div className="row">
@@ -38,5 +37,3 @@ const NavBar = () => {
         </div>
     )
 }
-
-export default NavBar;
