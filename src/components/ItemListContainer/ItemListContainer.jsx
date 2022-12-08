@@ -1,27 +1,32 @@
 
 import { useEffect, useState } from "react";
 import { burgers } from "../../assets/burgers";
-import { customPromise } from "../../assets/customPromise";
+import ItemCount from "../ItemCount/ItemCount";
+import { ItemDetailContainer } from "../ItemDetailContainer/ItemDetailContainer";
 import { ItemList } from "../ItemList/ItemList";
 
-const ItemListContainer = () =>{
+export const ItemListContainer = () =>{
 
-    const [listBurgers, setListBurgers] = useState ([])
+    const [items, setItems] = useState ([])
     const [Loader, setLoader] = useState(true)
 
     useEffect(() => {
-        customPromise(burgers)
-            .then(res => {
-                setLoader(false)
-                setListBurgers(res)
-            })
-    }, [])
+        const customPromise = new Promise((res, rej) => {
+                setTimeout(() => {
+                    res(burgers);
+                }, 2000);
+        });
+
+        customPromise.then((data) => {
+            setItems(data);
+        })
+    }, []);
 
     return(
-        <div>
-            <ItemList listBurgers = {listBurgers} />
+        <div className="container">
+            {/* <ItemList items = {items} /> */}
+            <ItemDetailContainer />
+            <ItemCount stock={10}/>
         </div>
     )
 }
-
-export { ItemListContainer } 

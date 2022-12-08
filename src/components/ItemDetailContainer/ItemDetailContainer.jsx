@@ -1,31 +1,26 @@
-import { useEffect, useState } from "react"
-import { useParams } from 'react-router-dom'
-import { burgers } from "../../assets/burgers"
-import { ItemDetail } from "../ItemDetail/ItemDetail"
-
-
+import { useEffect } from "react";
+import { useState } from "react";
+import { burgers } from "../../assets/burgers";
+import { ItemDetail } from "../ItemDetail/ItemDetail";
 
 export const ItemDetailContainer = () => {
-
-    const [listBurgers, setBookList] = useState([])
-    const { id } = useParams()
+    const [item, setItem] = useState([]);
 
     useEffect(() => {
-        const info = new Promise((resolve) => {
-        setTimeout(() => {
-            resolve(burgers.find(burger => burger.id ===id))
-        }, 1000)
-    }) 
+        const customPromise = new Promise((res, rej) => {
+            setTimeout(() => {
+                res(burgers.find ( item => item.id === 1 ));
+            }, 2000);
+        });
 
-    info.then((info) => {
-        setBookList(info)
-    })
-    }, [id])
+        customPromise.then((data) => {
+            setItem(data);
+        })
+    });
 
     return (
-        <div>
-            <ItemDetail listBurger={listBurgers} />
+        <div className="container">
+            <ItemDetail item={item} />
         </div>
     )
-
 }

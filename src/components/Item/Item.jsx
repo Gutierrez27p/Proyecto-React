@@ -1,15 +1,14 @@
+import { ItemList } from "../ItemList/ItemList"
 
-export const Item = ({ burgers }) => {
+export const Item = ({ item }) => {
 
-    const {image, name, price} = burgers
-
-    return(
-        <div className="burgers card">
-            <img src={image} alt={name} width = "280px" />
-            <div>
-                <h3 className="titulo">{name}</h3>
-                <h4 className="precio">${price}</h4>
-                <h4 className="precio"><button className="btn btn-success">Ver detalles</button></h4>
+    return (
+        <div className="col-md-4" >
+            <div className="card text-center">
+                <img src={item.image} className="card-img-top" alt={item.name} />
+                    <div className="card-body">
+                        <p className="card-text">{item.name}</p>
+                    </div>
             </div>
         </div>
     )

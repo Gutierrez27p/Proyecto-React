@@ -1,29 +1,18 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import ItemCount from '../ItemCount/ItemCount'
+import { burgers } from "../../assets/burgers";
 
-export const ItemDetail = ({ listBurger }) => {
+export const ItemDetail = ({ item }) => {
 
-const { image, name, description, size, price, stock } = listBurger
-
-return (
-    <div className="cardDetail">
-        <img className="cardDetail-img" src={image} alt={name} />
-        <div className="cardDetail-container">
-            <div className="cardDetail-body">
-                <div className="cardDetail-top">
-                <h2>{name}</h2>
-                <i class="bi bi-box-arrow-left btn"></i>
-                </div>
-                <p>{description}</p>
-                <p>{size}</p>
-                <p>{stock}</p>
-                <h5>${price}</h5>
+    return (
+        <div className="cardDetail row">
+            <div className="col-md-4">
+                <img src={item.image} alt={item.name} className="img-fluid" />
             </div>
-            <div className="cardDetail-btn">
-                <ItemCount center />
+            <div className="col-md-12">
+                <h1>{item.name}</h1>
+                <p>{item.description}</p>
+                <p>{item.size}</p>
+                <p><b>${item.price}</b></p>
             </div>
         </div>
-    </div>
     )
 }

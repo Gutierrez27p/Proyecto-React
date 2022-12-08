@@ -8,7 +8,8 @@ export const burgers =
             image: "https://deananddennys.com/contenidos/1655218547.jpg",
             price: "1570",
             initial: 1,
-            stock: "17"
+            stock: "17",
+            category: "hamburguesas"
         },
         {
             id: "112",
@@ -18,7 +19,8 @@ export const burgers =
             image: "https://deananddennys.com/contenidos/1655218587.jpg",
             price: "799",
             initial: 1,
-            stock: "30"
+            stock: "30",
+            category: "hamburguesas"
         },
         {
             id: "113",
@@ -28,7 +30,8 @@ export const burgers =
             image: "https://deananddennys.com/contenidos/1655218615.jpg",
             price: "1470",
             initial: 1,
-            stock: "50"
+            stock: "50",
+            category: "hamburguesas"
         },
         {
             id: "114",
@@ -38,7 +41,8 @@ export const burgers =
             image: "https://deananddennys.com/timthumb.php?src=./contenidos/1655218636.jpg&h=800&w=800&zc=2",
             price: "1770",
             initial: 1,
-            stock: "35"
+            stock: "35",
+            category: "hamburguesas"
         },
         {
             id: "115",
@@ -48,7 +52,8 @@ export const burgers =
             image: "https://deananddennys.com/stage/timthumb.php?src=./contenidos/1612364051.jpg&h=800&w=800&zc=2",
             price: "1770",
             initial: 1,
-            stock: "6"
+            stock: "6",
+            category: "hamburguesas"
         },
         {
             id: "116",
@@ -58,7 +63,8 @@ export const burgers =
             image: "https://deananddennys.com/stage/timthumb.php?src=./contenidos/1612364120.jpg&h=800&w=800&zc=2",
             price: "1330",
             initial: 1,
-            stock: "12"
+            stock: "12",
+            category: "hamburguesas"
         },
         {
             id: "117",
@@ -68,7 +74,8 @@ export const burgers =
             image: "https://deananddennys.com/timthumb.php?src=./contenidos/1655218694.jpg&h=800&w=800&zc=2",
             price: "1450",
             initial: 1,
-            stock: "18"
+            stock: "18",
+            category: "hamburguesas"
         },
         {
             id: "118",
@@ -78,7 +85,8 @@ export const burgers =
             image: "https://deananddennys.com/timthumb.php?src=./contenidos/1655218712.jpg&h=800&w=800&zc=2",
             price: "1330",
             initial: 1,
-            stock: "23"
+            stock: "23",
+            category: "hamburguesas"
         },
         {
             id: "119",
@@ -88,7 +96,8 @@ export const burgers =
             image: "https://deananddennys.com/stage/contenidos/1612363956.jpg",
             price: "1799",
             initial: 1,
-            stock: "21"
+            stock: "21",
+            category: "hamburguesas"
         },
         {
             id: "120",
@@ -98,7 +107,8 @@ export const burgers =
             image: "https://deananddennys.com/timthumb.php?src=./contenidos/1639399010.jpg&h=800&w=800&zc=2",
             price: "799",
             initial: 1,
-            stock: "38"
+            stock: "38",
+            category: "hamburguesas"
         },
         {
             id: "121",
@@ -108,7 +118,8 @@ export const burgers =
             image: "https://deananddennys.com/timthumb.php?src=./contenidos/1639399217.jpg&h=800&w=800&zc=2",
             price: "799",
             initial: 1,
-            stock: "33"
+            stock: "33",
+            category: "hamburguesas"
         },
         {
             id: "122",
@@ -118,7 +129,117 @@ export const burgers =
             image: "https://deananddennys.com/timthumb.php?src=./contenidos/1639399322.jpg&h=800&w=800&zc=2",
             price: "899",
             initial: 1,
-            stock: "41"
+            stock: "41",
+            category: "hamburguesas"
         },
-        
+        {
+            id: "123",
+            name: "Papas clásicas",
+            description: "Papas clásicas corte Crinkle",
+            size: " CHICA | GRANDE ",
+            image: "https://deananddennys.com/contenidos/1612363507.jpg",
+            price: "499",
+            initial: 1,
+            stock: "9",
+            category: "papas"
+        },
+        {
+            id: "124",
+            name: "Cheese Fries",
+            description: "Papas fritas corte Crinkle con salsa de cheddar",
+            size: " CHICA | GRANDE ",
+            image: "https://deananddennys.com/timthumb.php?src=./contenidos/1612363555.jpg&h=800&w=800&zc=2",
+            price: "599",
+            initial: 1,
+            stock: "11",
+            category: "papas"
+        },
+        {
+            id: "125",
+            name: "Lenny Fries ",
+            description: "Papas corte Crinkle con cheddar y panceta crocante",
+            size: " CHICA | GRANDE ",
+            image: "https://deananddennys.com/timthumb.php?src=./contenidos/1601381979.png&h=800&w=800&zc=2",
+            price: "799",
+            initial: 1,
+            stock: "13",
+            category: "papas"
+        },
+        {
+            id: "126",
+            name: "Hot Dog",
+            description: "Salchicha artesanal tipo alemana en pan de papa.",
+            size: " SALCHICHA ALEMANA ",
+            image: "https://deananddennys.com/timthumb.php?src=./contenidos/1662407458.jpg&h=800&w=800&zc=2",
+            price: "350",
+            initial: 1,
+            stock: "6",
+            category: "panchos"
+        },
+        {
+            id: "127",
+            name: "Lenny Hot Dog",
+            description: "Salchicha artesanal tipo alemana con nuestra salsa cheddar y panceta en pan de papa",
+            size: " SALCHICHA ALEMANA ",
+            image: "https://deananddennys.com/timthumb.php?src=./contenidos/1662407474.jpg&h=800&w=800&zc=2",
+            price: "899",
+            initial: 1,
+            stock: "41",
+            category: "panchos"
+        },
+        {
+            id: "128",
+            name: "Caesar",
+            description: "Mix de verdes, pollo, crutons y queso en hebras con aderezo Caesar clásico",
+            size: " CHICO | GRANDE ",
+            image: "https://deananddennys.com/timthumb.php?src=./contenidos/1612363346.jpg&h=800&w=800&zc=2",
+            price: "1299",
+            initial: 1,
+            stock: "3",
+            category: "ensaladas"
+        },
+        {
+            id: "129",
+            name: "Ensalada del chef",
+            description: "Mix de lechugas, zanahoria rallada, jamón cocido, queso tybo, tomate cherry y huevo.",
+            size: " CHICO | GRANDE ",
+            image: "https://deananddennys.com/timthumb.php?src=./contenidos/1612363417.jpg&h=800&w=800&zc=2",
+            price: "1369",
+            initial: 1,
+            stock: "4",
+            category: "ensaladas"
+        },
+        {
+            id: "130",
+            name: "Franui Leche/Amargo",
+            description: "Frambuesas bañadas en chocolate con leche o amargo",
+            size: " CHICO | GRANDE ",
+            image: "https://deananddennys.com/contenidos/1601390795.jpg",
+            price: "1099",
+            initial: 1,
+            stock: "5",
+            category: "postres"
+        },
+        {
+            id: "131",
+            name: "Bombones Munchis",
+            description: "Bombones de chocolate bañados sabor: Vainilla con Chocolate / Dulce de Leche con Chocolate",
+            size: " CHICO | GRANDE ",
+            image: "https://deananddennys.com/contenidos/1650395064.jpg",
+            price: "650",
+            initial: 1,
+            stock: "1",
+            category: "postres"
+        },
+        {
+            id: "132",
+            name: "Palitos Munchis",
+            description: "Dulce de Leche / Crema Americana / Frutilla a la Crema",
+            size: " CHICO | GRANDE ",
+            image: "https://deananddennys.com/timthumb.php?src=./contenidos/1615474148.jpg&h=800&w=800&zc=2",
+            price: "299",
+            initial: 1,
+            stock: "7",
+            category: "postres"
+        },
     ]
