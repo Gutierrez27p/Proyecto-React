@@ -1,5 +1,4 @@
-import { burgers } from "../../assets/burgers"
-import { Item } from "../Item/Item"
+import { Item } from "../Item/Item";
 
 
 export const ItemList = ({items}) => {
@@ -8,7 +7,7 @@ export const ItemList = ({items}) => {
     console.log(items);
 
     return(
-        <div className="list-burgers">
+        <div className="row">
             {
                 items.map(item => <Item key={item.id} item={item} />)
             }

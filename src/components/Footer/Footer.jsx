@@ -3,13 +3,13 @@ export const Footer = () => {
         <div className="container py-5">
             <div className="row">
                 <div className="col-md-6 d-flex align-items-center bg-black py-2">
-                    <a href="" className="mx-2"><img src="img/face.png" alt="facebook" /></a>
-                    <a href="" className="mx-2"><img src="img/inst.png" alt="instagram" /></a>
-                    <a href="" className="mx-2"><img src="img/linkedin.png" alt="linkedin" /></a>
+                    <a href="" className="mx-2 icons"><img src="img/face.png" alt="facebook" /></a>
+                    <a href="" className="mx-2 icons"><img src="img/inst.png" alt="instagram" /></a>
+                    <a href="" className="mx-2 icons"><img src="img/linkedin.png" alt="linkedin" /></a>
                 </div>
                 <div className="col-md-6 d-flex align-items-center justify-content-end bg-black">
-                    <a href="" target="_blank"><img src="img/app_store_badge.png" alt="app-store" /></a>
-                    <a href="" target="_blank"><img src="img/google_play_badge.png" alt="play-store" /></a>
+                    <a href="" target="_blank"><img src="img/app_store_badge.png" alt="app-store" width="50%" /></a>
+                    <a href="" target="_blank"><img src="https://www.pngall.com/wp-content/uploads/10/Google-Play-Logo-PNG-Cutout.png" alt="play-store" width="50%" /></a>
                 </div>
             </div>
             <hr />
