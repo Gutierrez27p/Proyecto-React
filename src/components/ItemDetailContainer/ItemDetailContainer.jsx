@@ -12,15 +12,13 @@ export const ItemDetailContainer = () => {
         const customPromise = new Promise((res, rej) => {
             setTimeout(() => {
                 res(array.find ( item => item.id === parseInt(id)));
-            }, 2000);
+            }, 1000);
         });
         customPromise.then((data) => {
             setItem(data);
         })
     }, [id])
     
-    console.log(item)
-
     return (
         <div className="container">
             <ItemDetail item={item} /> 

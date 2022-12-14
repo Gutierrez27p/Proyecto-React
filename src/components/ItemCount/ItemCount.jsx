@@ -11,7 +11,7 @@ const ItemCount = ({ stock }) => {
 
     return (
         <div className="row">
-            <div className="col-md-3">
+            <div className="col-md-6">
                 <div className="btn-group" role="group" aria-label="Basic outlined example">
                     <button type="button" className="itemDetailBtn text-center" onClick={decrease}><b>-</b></button>                            
                     <button type="button" className="itemStock">{count}</button>
