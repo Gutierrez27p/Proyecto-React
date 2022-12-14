@@ -17,12 +17,13 @@ export const ItemDetailContainer = () => {
         customPromise.then((data) => {
             setItem(data);
         })
-    })
+    }, [id])
     
+    console.log(item)
+
     return (
         <div className="container">
-            {/* <ItemDetail item={item} />  esto tendria que traer las cards de mis productos con la info, image, price etc + el itemcount*/} 
-            {array.map (item => (<ItemDetail key={item.id} item={item} />))}
+            <ItemDetail item={item} /> 
         </div>
     )
 }
