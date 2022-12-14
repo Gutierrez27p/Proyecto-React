@@ -110,3 +110,43 @@ h3, h4{
     display: flex;
     justify-content: right;
 }
+
+/*Item count*/
+
+.itemDetailBtn {
+    margin: 0 1rem 0 1rem;
+    font-size: 15px;
+    color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    background-color: #198754ce;
+    border-radius: 100%;
+    align-items: center;
+    line-height: normal;
+}
+
+.itemStock{
+    font-size: 25px;
+    border: none;
+    background: none;
+}
+
+.btnAgregar{
+    font-size: 13px;
+    border-radius: 17px;
+    margin-right: 2.5rem;
+    margin-left: 0.5rem;
+    height: 34px;
+    width: 118px;
+    background-color: #198754ce;
+    border: none;
+    margin: 1rem;
+    color: white;
+}
+/*Footer*/
+
+div .redes{
+    border: white 2px solid;
+    border-radius: 18px;
+}

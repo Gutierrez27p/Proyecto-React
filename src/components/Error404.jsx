@@ -5,7 +5,7 @@ export const Error404 = () => {
                 <div className="col-md-12">
                     <div className="alert alert-danger text-center" role="alert">
                         <h1>Error 404</h1>
-                        <P>La pagina que estas buscando no existe.</P>
+                        <p>La pagina que estas buscando no existe.</p>
                     </div>
                 </div>
             </div>

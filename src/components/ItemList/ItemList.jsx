@@ -2,10 +2,6 @@ import { Item } from "../Item/Item";
 
 
 export const ItemList = ({items}) => {
-
-    console.log("Items");
-    console.log(items);
-
     return(
         <div className="row">
             {

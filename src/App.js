@@ -9,12 +9,12 @@ const App = () => {
   return(
     <BrowserRouter>
       <NavBar />
-      <Routes>
-        <Route path={"/"} element={<ItemListContainer />} />
-        <Route path={"/category/:id"} element={<ItemListContainer />} />
-        <Route path={"/item/:id"} element={<ItemDetailContainer />} />
-        <Route path={"*"} element={<Error404 />} />
-      </Routes>
+        <Routes>
+          <Route path={"/"} element={<ItemListContainer />} />
+          <Route path={"/category/:id"} element={<ItemListContainer />} />
+          <Route path={"/item/:id"} element={<ItemDetailContainer />} />
+          <Route path={"*"} element={<Error404 />} />
+        </Routes>
       <Footer />
     </BrowserRouter>
   )
