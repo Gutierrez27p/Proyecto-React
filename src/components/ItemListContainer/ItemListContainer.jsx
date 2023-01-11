@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import array  from '../../assets/array.json'
 import { ItemList } from "../ItemList/ItemList";
 
@@ -24,10 +24,8 @@ export const ItemListContainer = () =>{
         <div className="container">
             <div className="row">
                 <div className="col-md-12">
-                    <div className="text-center" role="alert">
-                        <Link>
+                    <div className="text-center">
                             <ItemList items={items} />
-                        </Link>
                     </div>
                 </div>
             </div>

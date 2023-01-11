@@ -1,12 +1,17 @@
+import { useContext } from "react";
+import { Link } from "react-router-dom";
+import { CartContext } from "../Context/CartContext";
+
 const CartWidget = () =>{
+    const {cartTotal} = useContext(CartContext);
 
     return (
-        <button type="button" className="btn position-relative p-0">
+        <Link to={"/cart"} className="btn position-relative p-0">
             <img src="https://cdn-icons-png.flaticon.com/512/711/711897.png" alt="cart" width="25" />
             <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
-                0
+                {cartTotal()}
             </span>
-        </button>
+        </Link>
     )
 }
 

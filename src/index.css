@@ -135,8 +135,8 @@ h3, h4{
 .btnAgregar{
     font-size: 13px;
     border-radius: 17px;
-    margin-right: 2.5rem;
-    margin-left: 0.5rem;
+    margin-right: 2.5rem!important;
+    margin-left: 0.5rem!important;
     height: 34px;
     width: 118px;
     background-color: #198754ce;
@@ -144,6 +144,22 @@ h3, h4{
     margin: 1rem;
     color: white;
 }
+
+.btnAgregar-comprar{
+    font-size: 22px;
+    padding-left: 1rem;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+/*cart*/
+
+.text-cart{
+    padding-top: 2.5rem!important;
+}
+
 /*Footer*/
 
 div .redes{

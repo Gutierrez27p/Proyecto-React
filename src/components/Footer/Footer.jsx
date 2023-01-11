@@ -5,9 +5,9 @@ export const Footer = () => {
         <div className="container py-5">
             <div className="row">
                 <div className="col-md-8 d-flex align-items-center bg-black py-2">
-                    <NavLink to="" className="mx-2 icons"><img src={"https://deananddennys.com/img/footer/face.png"} alt="facebook" /></NavLink>
-                    <NavLink to="" className="mx-2 icons"><img src={"https://deananddennys.com/img/footer/inst.png"} alt="instagram" /></NavLink>
-                    <NavLink to="" className="mx-2 icons"><img src={"https://deananddennys.com/img/footer/linkedin.png"} alt="linkedin" /></NavLink>
+                    <NavLink to="https://www.facebook.com/deananddennys/" className="mx-2 icons"><img src={"https://deananddennys.com/img/footer/face.png"} alt="facebook" /></NavLink>
+                    <NavLink to="https://www.instagram.com/deandennys/" className="mx-2 icons"><img src={"https://deananddennys.com/img/footer/inst.png"} alt="instagram" /></NavLink>
+                    <NavLink to="https://ar.linkedin.com/company/dean-&-dennys/" className="mx-2 icons"><img src={"https://deananddennys.com/img/footer/linkedin.png"} alt="linkedin" /></NavLink>
                 </div>
                 <div className="col-md-4 d-flex align-items-center justify-content-end bg-black">
                     <NavLink to="" target="_blank"><img className="col-md-8 redes" src={"https://www.mcdonalds.com.ar/uploads/app_store_3x_d293084ca1.png"} alt="app-store" width="50%" /></NavLink>
