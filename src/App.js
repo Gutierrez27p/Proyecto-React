@@ -1,5 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Carrousel from "./components/Carrousel/Carrousel";
 import Cart from "./components/Cart/Cart";
+import Checkout from "./components/Checkout/Checkout";
 import CartContextProvider from "./components/Context/CartContext";
 import { Error404 } from "./components/Error404";
 import { Footer} from "./components/Footer/Footer";
@@ -17,6 +19,7 @@ const App = () => {
           <Route exact path={"/category/:id"} element={<ItemListContainer />} />
           <Route exact path={"/item/:id"} element={<ItemDetailContainer />} />
           <Route exact path={"/cart"} element={<Cart />} />
+          <Route exact path={"/checkout"} element={<Checkout />} />
           <Route exact path={"*"} element={<Error404 />} />
         </Routes>
         <Footer />

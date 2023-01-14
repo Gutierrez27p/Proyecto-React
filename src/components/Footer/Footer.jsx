@@ -10,8 +10,8 @@ export const Footer = () => {
                     <NavLink to="https://ar.linkedin.com/company/dean-&-dennys/" className="mx-2 icons"><img src={"https://deananddennys.com/img/footer/linkedin.png"} alt="linkedin" /></NavLink>
                 </div>
                 <div className="col-md-4 d-flex align-items-center justify-content-end bg-black">
-                    <NavLink to="" target="_blank"><img className="col-md-8 redes" src={"https://www.mcdonalds.com.ar/uploads/app_store_3x_d293084ca1.png"} alt="app-store" width="50%" /></NavLink>
-                    <NavLink to="" target="_blank"><img className="col-md-8 redes" src={"https://www.mcdonalds.com.ar/uploads/disponible_google_play_3x_c977cae3bc.png"} alt="play-store" width="50%" /></NavLink>
+                    <NavLink to="https://www.apple.com/la/app-store/" target="_blank"><img className="col-md-8 redes" src={"https://www.mcdonalds.com.ar/uploads/app_store_3x_d293084ca1.png"} alt="app-store" width="50%" /></NavLink>
+                    <NavLink to="https://play.google.com/store/games?hl=es&pli=1" target="_blank"><img className="col-md-8 redes" src={"https://www.mcdonalds.com.ar/uploads/disponible_google_play_3x_c977cae3bc.png"} alt="play-store" width="50%" /></NavLink>
                 </div>
             </div>
             <hr />

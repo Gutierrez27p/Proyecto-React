@@ -1,8 +1,8 @@
 
 export const Loader = () => {
     return (
-        <div>
-            <img src="https://deananddennys.com/img/preloader.gif" alt="loading" />
+        <div className="text-center">
+            <img src={"https://deananddennys.com/img/preloader.gif"} alt={"loading"} />
         </div>
     )
 }
