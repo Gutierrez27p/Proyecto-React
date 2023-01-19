@@ -1,5 +1,6 @@
-import { collection, getFirestore, addDoc, updateDoc, doc } from "firebase/firestore";
+import { collection, getFirestore, addDoc } from "firebase/firestore";
 import { useState, useContext } from "react";
+import { Navigate } from "react-router-dom";
 import { CartContext } from "../Context/CartContext";
 
 const Checkout = () => {
@@ -22,29 +23,6 @@ const Checkout = () => {
         const ordersCollection = collection(db, "Orders");
         addDoc(ordersCollection, order).then((snapShot) => {
             setOrderId(snapShot.id);
-            const orderComplete = doc(db, "Orders", snapShot.id);
-            updateDoc(orderComplete, {total:order.total * 1.21})
-
-                // Modificar un Documento en Batch
-            /* const batch = writeBatch(db);
-            const updateOrder = doc(db, "Orders", snapShot.id);
-            const updateOrder2 = doc(db, "Orders", snapShot.id);
-            batch.update(updatedOrder, {total:10000});
-            batch.set(updatedOrder, {...order, price_friend:sumTotal()*0.9});
-            batch.commit(); //Efectivizar la actualización o seteo de los campos y valores */
-
-            // Modificar todas Ordenes con un valor especifico
-            /* const ordersCollection = collection(db, "Orders");
-            const batch = writeBatch(db);
-            getDocs(ordersCollection).then(results => {
-                results.docs.map(item => {
-                    let docModificado = doc(db, "Orders", item.id);
-                    batch.update(docModificado, {total:item.data()["total"] * 1.10});
-                });
-                batch.commit();
-            }); */
-
-
             clear();
         });
     }
@@ -91,8 +69,8 @@ const Checkout = () => {
                 </div>
             </div>
             <div className="row">
-                <div className="col text-center">
-                    {orderId !== "" ? <div className="alert alert-success" role="alert">Gracias por su compra, número de orden: <b>{orderId}</b></div> : ""}
+                <div className="text-center">
+                    {orderId !== "" ? <Navigate to={"/thanks/" + orderId} /> : ""}
                 </div>
             </div>
         </div>

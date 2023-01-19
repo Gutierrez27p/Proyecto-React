@@ -11,7 +11,7 @@ const Firebase = () => {
             if(snapShot.exists()){
                 console.log(snapShot.data());
             }else{
-                console.log("El producto no existe cumpa.")
+                console.log("El producto no existe.")
             }
         });
     }, []);

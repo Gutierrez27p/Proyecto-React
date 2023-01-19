@@ -1,14 +1,14 @@
-import { addDoc, collection, getDocs, getFirestore, query, where, limit } from "firebase/firestore";
+import { collection, getDocs, getFirestore, query, where } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-// import array  from '../../assets/array.json'
 import Carrousel from "../Carrousel/Carrousel";
 import { ItemList } from "../ItemList/ItemList";
+import { Loader } from "../Loader";
 
 export const ItemListContainer = () =>{
 
     const [items, setItems] = useState ([])
-    // const [Loader, setLoader] = useState(true)
+    const [loader, setLoader] = useState(true)
     const {id} = useParams()
 
     // useEffect(() => {
@@ -34,11 +34,12 @@ export const ItemListContainer = () =>{
     useEffect(() => {
         const db = getFirestore();
         const productCollection = collection(db, "Productos");
-        const q = id ? query(productCollection, where("category", "==", id)) : productCollection; // filtro por id
-        //const q = query(productCollection, where("price", "<", 1000), limit (3)); //consulta de filtrado (precio)
+        const q = id ? query(productCollection, where("category", "==", id)) : productCollection; //  filtro por id
+        //const q = query(productCollection, where("price", "<", 1000), limit (3)); //  consulta de filtrado (precio)
         getDocs(q).then((snapShot) => {
             setItems(snapShot.docs.map((doc) => ({id:doc.id, ...doc.data()})
-            ))
+            ));
+            setLoader(false);
         });
     }, [id]);
     
@@ -48,7 +49,7 @@ export const ItemListContainer = () =>{
                 <div className="col-md-12">
                     <div className="text-center">
                             <Carrousel />
-                            <ItemList items={items} />
+                            {loader ? <Loader /> : <ItemList items={items} />}
                     </div>
                 </div>
             </div>

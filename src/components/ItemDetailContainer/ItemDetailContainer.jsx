@@ -1,19 +1,20 @@
 import { useState, useEffect } from "react";
 import { useParams } from 'react-router-dom';
 import { doc, getDoc, getFirestore } from "firebase/firestore";
-import array from '../../assets/array.json'
 import { ItemDetail } from "../ItemDetail/ItemDetail";
+import { Loader } from "../Loader";
 
 export const ItemDetailContainer = () => {
 
     const [item, setItem] = useState([]);
+    const [loader, setLoader] = useState(true);
     const { id } = useParams();
 
     // useEffect(() => {
     //     const customPromise = new Promise((res, rej) => {
     //         setTimeout(() => {
     //             res(array.find ( item => item.id === parseInt(id)));
-    //         }, 1000);
+    //         }, 2000);
     //     });
     //     customPromise.then((data) => {
     //         setItem(data);
@@ -26,15 +27,16 @@ export const ItemDetailContainer = () => {
         getDoc(item).then((snapShot) => {
             if(snapShot.exists()){
                 setItem({id:snapShot.id, ...snapShot.data()});
+                setLoader(false);
             }else{
                 console.log("El producto no existe.")
             }
         });
-    }, []);
+    }, [id]);
     
     return (
         <div className="container">
-            <ItemDetail item={item} /> 
+            {loader ? <Loader/> : <ItemDetail item={item} /> }
         </div>
     )
 }
