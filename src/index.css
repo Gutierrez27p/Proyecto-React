@@ -228,7 +228,7 @@ div .redes{
 
 /*phone*/
 
-@media (min-width: 501px) and (max-width: 767px){
+@media (min-width: 450px) and (max-width: 767px){
     .container{
         max-width: none;
     }
@@ -236,7 +236,7 @@ div .redes{
         max-width: 725px;
     }
     .items-phone{
-        margin-left: 11rem;
+        margin-left: 5rem;
 
     }
     .icons-phone{
