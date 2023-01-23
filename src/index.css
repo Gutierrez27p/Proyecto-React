@@ -228,7 +228,7 @@ div .redes{
 
 /*phone*/
 
-@media (min-width: 450px) and (max-width: 767px){
+@media (min-width: 368px) and (max-width: 501px){
     .container{
         max-width: none;
     }
@@ -236,8 +236,45 @@ div .redes{
         max-width: 725px;
     }
     .items-phone{
-        margin-left: 5rem;
+        margin-left: 4rem;
+    }
+    .icons-phone{
+        justify-content: center;
+    }
+    .redes{
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+        margin-right: 4rem;
+        width: 130px;
+    }
+    .text-footer{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-around;
+        align-items: center;
+        justify-content: center!important;
+    }
+    .text-footer-p{
+        text-align: center!important;
+        margin-top: 0.5rem;
+        font-weight: bold;
+        color: #14834fce;
+    }
+}
 
+@media (min-width: 501px) and (max-width: 767px){
+    .container{
+        max-width: none;
+    }
+    .banner-phone{
+        max-width: 725px;
+    }
+    .items-phone{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-around;
     }
     .icons-phone{
         justify-content: center;
@@ -245,8 +282,6 @@ div .redes{
     .redes{
         margin-bottom: 1rem;
         margin-left: 4rem;
-        margin-right: 8rem;
-        width: 130px;
     }
     .text-footer{
         display: flex;
