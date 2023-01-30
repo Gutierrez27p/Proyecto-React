@@ -11,6 +11,14 @@
     color: rgb(35, 179, 35);
 }
 
+.row{
+    --bs-gutter-x:0;
+}
+
+.table>:not(caption)>*>*{
+    padding: 0;
+}
+
 /* Burgers */
 
 .list-burgers{
