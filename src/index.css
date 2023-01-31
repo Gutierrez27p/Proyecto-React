@@ -11,14 +11,6 @@
     color: rgb(35, 179, 35);
 }
 
-.row{
-    --bs-gutter-x:0;
-}
-
-.table>:not(caption)>*>*{
-    padding: 0;
-}
-
 /* Burgers */
 
 .list-burgers{
@@ -271,6 +263,9 @@ div .redes{
         margin-top: 0.5rem;
         font-weight: bold;
         color: #14834fce;
+    }
+    .m-2 {
+        margin: 0!important;
     }
 }
 
